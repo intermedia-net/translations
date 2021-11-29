@@ -8,21 +8,19 @@ import com.intermedia.translations.lokalise.LanguageMapping
 translations {
     api {
         lokalise {
-            setApiToken("<your lokalise api token>")
-            setProjectId("<your lokalise project id>")
-            setLanguageMappings([
-                    new LanguageMapping("fr_CA", "fr"),
-                    new LanguageMapping("nl_NL", "nl"),
-                    new LanguageMapping("es_419", "es")
-            ])
+            apiToken = "<your lokalise api token>"
+            projectId = "<your lokalise project id>"
+            languageMappings = [
+                new LanguageMapping("fr_CA", "fr"),
+                new LanguageMapping("nl_NL", "nl"),
+                new LanguageMapping("es_419", "es")
+            ]
         }
     }
-    setSupportedLanguages(
-            new SupportedLanguages(
-                    ['de', 'es', 'fr', 'it', 'ja', 'nl'],
-                    ['en-rAU', 'en-rGB']
-            )
+    supportedLanguages = new SupportedLanguages(
+        ['de', 'es', 'fr', 'it', 'ja', 'nl'],
+        ['en-rAU', 'en-rGB']
     )
-    setNotTranslatedFile(file("./src/main/res/values/strings_not_translated.xml"))
-    setResourcesFolder(file("./src/main/res/"))
+    notTranslatedFile = file("./src/main/res/values/strings_not_translated.xml")
+    resourcesFolder = file("./src/main/res/")
 }
