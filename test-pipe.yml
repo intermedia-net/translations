@@ -1,0 +1,15 @@
+trigger:
+- main
+
+pool:
+  name: default
+
+steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      Write-Host "Hello World"
+      Get-Content $(Build.SourcesDirectory)
