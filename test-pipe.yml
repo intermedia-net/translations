@@ -12,4 +12,4 @@ steps:
       # Write your PowerShell commands here.
       
       Write-Host "Hello World"
-      Get-Content $(Build.SourcesDirectory)
+      Get-ChildItem $(Build.SourcesDirectory)
