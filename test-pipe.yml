@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: default
+  name: VCPTeamPool
 
 steps:
 - task: PowerShell@2
